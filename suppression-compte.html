@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <title>Supprimer mon compte · RepDay</title>
+    <script>
+      // À RENSEIGNER AVANT PUBLICATION : origine HTTPS réelle de l'API, sans / final.
+      // Autoriser l'origine de cette page dans CORS_ORIGINS côté backend.
+      const API_ORIGIN = 'CHANGE_ME_API_ORIGIN';
+    </script>
+    <style>
+      :root { color-scheme: light; font: 17px/1.6 system-ui, sans-serif; color: #182e27; background: #f3f6f2; }
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 28px 18px; }
+      main { max-width: 680px; margin: auto; }
+      .brand { color: #276447; font-weight: 800; letter-spacing: .06em; }
+      h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.15; }
+      h2 { font-size: 1.2rem; }
+      section { margin: 22px 0; padding: 22px; background: white; border: 1px solid #d6e1d5; border-radius: 16px; }
+      label { display: block; font-weight: 600; }
+      input, button { font: inherit; width: 100%; padding: 12px; border-radius: 8px; }
+      input { border: 1px solid #60786a; margin: 8px 0 14px; }
+      button { background: #225c42; color: white; border: 0; cursor: pointer; font-weight: 650; }
+      button:disabled { opacity: .65; cursor: default; }
+      :focus-visible { outline: 3px solid #b35d00; outline-offset: 3px; }
+      .danger { background: #9b3028; }
+      #status { min-height: 1.6em; font-weight: 600; }
+      small { display: block; margin-top: 12px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="brand">REPDAY</p>
+      <h1>Supprimer mon compte</h1>
+      <p>Vous pouvez supprimer votre compte et les données associées depuis l’application ou demander la suppression ici, sans installer RepDay.</p>
+      <section>
+        <h2>Depuis l’application</h2>
+        <p>Ouvrez votre profil, choisissez « Supprimer mon compte », puis confirmez avec votre mot de passe ou votre compte Google / Apple.</p>
+      </section>
+      <section id="request-section">
+        <h2>Depuis le web</h2>
+        <p>Indiquez l’adresse email de votre compte RepDay. Si elle correspond à un compte, vous recevrez un lien valable 15 minutes. La suppression attendra votre confirmation sur cette page.</p>
+        <form id="request-form">
+          <label for="email">Adresse email du compte</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          <button type="submit">Recevoir le lien de confirmation</button>
+        </form>
+      </section>
+      <section id="confirm-section" hidden>
+        <h2>Confirmer la suppression</h2>
+        <p>Cette action est définitive. Votre profil, vos entraînements et vos données de suivi seront supprimés. La simple ouverture du lien ne supprime rien.</p>
+        <form id="confirm-form">
+          <button type="submit" class="danger">Supprimer définitivement mon compte</button>
+        </form>
+      </section>
+      <p id="status" role="status" aria-live="polite"></p>
+      <noscript><p>Activez JavaScript pour utiliser le formulaire web, ou suivez la procédure dans l’application.</p></noscript>
+      <section>
+        <h2>Données et délai</h2>
+        <p>Après confirmation réussie, la suppression en base est effectuée pendant la requête : profil, identités de connexion, sessions, programmes personnels, entraînements, mesures de progression, repas, objectifs et favoris nutritionnels, liens de coaching, conversations et notifications reçues.</p>
+        <p>La suppression des fichiers joints aux conversations est tentée juste après. En cas d’incident de stockage, leur purge peut nécessiter une intervention ; aucun délai automatique de reprise n’est actuellement garanti.</p>
+        <p>Les traces techniques d’abonnement et de paiement restent conservées, avec l’identifiant historique de facturation. Les entrées d’exercices et d’aliments créées restent dans le catalogue, sans lien propriétaire ; les copies de programmes détenues par d’autres utilisateurs peuvent subsister. Ce flux ne purge pas les sauvegardes ni les journaux techniques et ne fixe pas leur durée de conservation.</p>
+        <small>Supprimer RepDay n’annule pas un abonnement App Store ou Google Play. Gérez votre abonnement dans les réglages du store concerné.</small>
+      </section>
+    </main>
+    <script>
+      const status = document.getElementById('status');
+      const requestSection = document.getElementById('request-section');
+      const confirmSection = document.getElementById('confirm-section');
+      // Fragment uniquement : ni paramètre URL transmis au serveur, ni stockage local.
+      let token = new URLSearchParams(location.hash.slice(1)).get('token');
+      if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+      if (token) {
+        confirmSection.hidden = false;
+        requestSection.hidden = true;
+      }
+      let configured = false;
+      try {
+        const api = new URL(API_ORIGIN);
+        configured = api.protocol === 'https:' && api.origin === API_ORIGIN && !API_ORIGIN.includes('CHANGE_ME');
+      } catch { /* La page reste consultable avant configuration. */ }
+      if (!configured) {
+        status.textContent = 'Le formulaire web n’est pas encore disponible. Vous pouvez supprimer votre compte depuis l’application.';
+        document.querySelectorAll('button').forEach(button => { button.disabled = true; });
+      }
+      async function submit(form, path, body) {
+        const button = form.querySelector('button');
+        button.disabled = true;
+        status.textContent = 'Traitement en cours…';
+        try {
+          const response = await fetch(API_ORIGIN + '/account-deletion/' + path, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'omit',
+            cache: 'no-store',
+            referrerPolicy: 'no-referrer',
+            body: JSON.stringify(body),
+          });
+          if (response.status === 429) throw new Error('Trop de tentatives. Patientez une minute avant de réessayer.');
+          if (!response.ok) {
+            if (path === 'confirm' && response.status === 400) {
+              token = null;
+              confirmSection.hidden = true;
+              requestSection.hidden = false;
+              throw new Error('Ce lien est invalide, expiré ou déjà utilisé. Demandez un nouveau lien.');
+            }
+            throw new Error('Le service est momentanément indisponible. Réessayez plus tard.');
+          }
+          if (path === 'request') {
+            status.textContent = 'Si un compte correspond à cette adresse, un email de confirmation vous sera envoyé. Vérifiez aussi les indésirables.';
+          } else {
+            token = null;
+            confirmSection.hidden = true;
+            status.textContent = 'Votre compte RepDay a été supprimé.';
+          }
+        } catch (error) {
+          status.textContent = error instanceof TypeError
+            ? 'Impossible de joindre le service. Vérifiez votre connexion et réessayez plus tard.'
+            : error.message;
+        } finally { button.disabled = false; }
+      }
+      document.getElementById('request-form').addEventListener('submit', event => {
+        event.preventDefault();
+        if (configured) void submit(event.currentTarget, 'request', { email: document.getElementById('email').value.trim() });
+      });
+      document.getElementById('confirm-form').addEventListener('submit', event => {
+        event.preventDefault();
+        if (configured && token) void submit(event.currentTarget, 'confirm', { token });
+      });
+    </script>
+  </body>
+</html>
