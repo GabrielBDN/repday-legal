@@ -90,6 +90,9 @@
           identifiants d’installation et des métriques d’utilisation et de performance. Selon Google, ni les images
           et vidéos analysées, ni les résultats de l’analyse ne sont transmis à ses serveurs.
           <a href="https://developers.google.com/ml-kit/terms">Détails publiés par Google</a>.
+          Google publie aussi la <a href="https://developers.google.com/ml-kit/android-data-disclosure">liste des données collectées par ML Kit sur Android</a>,
+          notamment les informations sur l’appareil et l’application, les identifiants d’installation, les métriques,
+          les événements et les codes d’erreur.
         </p>
 
         <p>
@@ -106,7 +109,7 @@
         <p>La commande « RepDay, enregistre » est facultative et désactivée par défaut. Vous pouvez l’activer dans « Voix du coach » ; la permission micro est alors demandée. Le micro sert uniquement à reconnaître la commande pendant les fenêtres d’écoute du Live Coach. Dans le fonctionnement normal, la reconnaissance se fait sur l’appareil : aucun audio n’est stocké ou envoyé par RepDay. Si aucun moteur de reconnaissance local compatible n’est disponible, la commande vocale est indisponible ; le geste et le bouton restent utilisables.</p>
 
         <h3>Suivi des pas</h3>
-        <p>Si vous activez la synchronisation, RepDay lit uniquement le total quotidien de vos pas dans Health Connect (Android) ou Apple Santé (iOS) ; l’application n’y écrit aucune donnée. Vous pouvez également saisir un total manuellement. Le total du jour et sa source sont envoyés à nos serveurs dans la table des pas quotidiens ; votre objectif est conservé dans votre profil. L’écran Nutrition affiche un historique de sept jours. Ces données ne sont pas partagées avec un tiers et ne servent pas à la publicité. Vous pouvez arrêter la synchronisation dans l’application et retirer l’autorisation de lecture dans Health Connect ou Apple Santé. Les pas et l’objectif sont effacés avec votre compte.</p>
+        <p>Si vous activez la synchronisation, RepDay lit uniquement le total quotidien de vos pas dans Health Connect (Android) ou Apple Santé (iOS) ; l’application n’y écrit aucune donnée. Vous pouvez également saisir un total manuellement. Tant que la synchronisation est activée, l’application relit les totaux des sept derniers jours quand vous consultez l’écran Nutrition ou celui des pas, et à vos retours dans l’application ; elle les envoie à nos serveurs avec leur source (Health Connect ou Apple Santé) et, pendant une même session, ne renvoie un total déjà envoyé que s’il a changé. Aucun total n’est envoyé pour un jour sans pas, ni lorsque l’accès est refusé ou retiré. Un total saisi à la main est envoyé avec la source « saisie manuelle » ; votre objectif est conservé dans votre profil. L’écran Nutrition affiche un historique de sept jours. Ces données ne sont pas partagées avec un tiers et ne servent pas à la publicité. Vous pouvez arrêter la synchronisation dans l’application et retirer l’autorisation de lecture dans Health Connect ou Apple Santé. Les pas et l’objectif sont effacés avec votre compte.</p>
 
         <h3>Messagerie avec votre coach</h3>
         <p>Si vous êtes relié à un coach, le contenu de vos messages et les pièces jointes que vous envoyez. Ces échanges ont lieu entre deux personnes humaines : votre coach y a accès, c’est leur finalité.</p>
