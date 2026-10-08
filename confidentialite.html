@@ -32,7 +32,7 @@
     <main>
       <p class="brand">REPDAY</p>
       <h1>Politique de confidentialité</h1>
-      <p>Version 1.1 — dernière mise à jour le 30 septembre 2026.</p>
+      <p>Version 1.2 — dernière mise à jour le 8 octobre 2026.</p>
 
       <nav>
         <a href="./cgu.html">Conditions générales</a> ·
@@ -45,6 +45,7 @@
           <li><strong>La caméra du Live Coach ne quitte jamais votre téléphone.</strong> L’analyse de posture est faite sur l’appareil : son flux n’est ni transmis ni conservé pour cette analyse. Seule la vidéo que vous demandez de filmer est enregistrée sur votre téléphone.</li>
           <li>RepDay ne vend pas vos données, ne diffuse pas de publicité et n’intègre aucun traceur publicitaire. Le SDK de détection de pose ML Kit transmet toutefois à Google des métriques techniques d’utilisation et de diagnostic, décrites ci-dessous.</li>
           <li>Vos données d’entraînement et de forme physique, dont vos pas si vous activez leur suivi, sont traitées avec votre consentement explicite, que vous pouvez retirer à tout moment.</li>
+          <li><strong>Le volet Amis est facultatif.</strong> Tant que vous ne l’activez pas, personne ne peut vous ajouter. Une fois activé, vos amis ne voient que ce que vous choisissez de partager, et les trois partages (séances, programmes, records) sont éteints au départ. Il n’existe ni profil public, ni recherche de membres.</li>
           <li>Vous pouvez lancer la suppression de votre compte depuis l’application ou <a href="./suppression-compte.html">depuis le web</a>, sans nous contacter. La suppression des données est détaillée plus bas.</li>
         </ul>
       </section>
@@ -66,7 +67,7 @@
         <h2>2. Quelles données sont traitées</h2>
 
         <h3>Données de compte</h3>
-        <p>Adresse email, nom d’affichage, et selon votre mode de connexion : un mot de passe (stocké uniquement sous forme de condensat bcrypt, jamais en clair) ou un identifiant de compte Google ou Apple. La connexion Google ou Apple ne nous donne accès ni à vos contacts, ni à vos emails, ni à votre stockage.</p>
+        <p>Adresse email, nom d’affichage, photo de profil si vous en ajoutez une (vous pouvez la retirer à tout moment), et selon votre mode de connexion : un mot de passe (stocké uniquement sous forme de condensat bcrypt, jamais en clair) ou un identifiant de compte Google ou Apple. La connexion Google ou Apple ne nous donne accès ni à vos contacts, ni à vos emails, ni à votre stockage.</p>
 
         <h3>Données de santé et de forme physique</h3>
         <p>Poids, taille, âge, genre, niveau d’activité et niveau d’expérience, lorsque vous les renseignez ; activité (total quotidien de pas) et objectif de pas si vous utilisez leur suivi. Ces informations relèvent de l’article 9 du RGPD (catégorie particulière) et bénéficient à ce titre d’une protection renforcée.</p>
@@ -114,6 +115,26 @@
         <h3>Messagerie avec votre coach</h3>
         <p>Si vous êtes relié à un coach, le contenu de vos messages et les pièces jointes que vous envoyez. Ces échanges ont lieu entre deux personnes humaines : votre coach y a accès, c’est leur finalité.</p>
 
+        <h3>Volet Amis (facultatif)</h3>
+        <p>Le volet Amis reste désactivé tant que vous ne l’activez pas. À l’activation, RepDay crée votre code ami personnel et enregistre vos choix de partage ainsi que la date de votre accord. On ne peut vous ajouter qu’avec ce code, que vous communiquez vous-même : il n’existe ni annuaire, ni recherche par nom ou par email, ni import de contacts, ni profil public, ni messagerie entre amis. Vous pouvez renouveler votre code à tout moment : l’ancien cesse de fonctionner, et vos amis actuels le restent.</p>
+        <p>Ce que voient les autres membres :</p>
+        <ul>
+          <li><strong>Pendant une demande d’ami</strong>, dans un sens ou dans l’autre : votre prénom (le premier mot de votre nom d’affichage) et votre photo de profil. Une personne qui saisit votre code les voit dès l’envoi de sa demande, avant que vous l’ayez acceptée.</li>
+          <li><strong>Une fois la demande acceptée</strong> : votre nom d’affichage complet, votre photo de profil, la date depuis laquelle vous êtes amis et, pour chaque catégorie que vous choisissez de partager :
+            <ul>
+              <li><strong>Séances</strong> : vos séances terminées (date, durée, nom du jour de programme, exercices, groupes musculaires, séries, charges, répétitions ou durées, volume total), la date de votre dernière séance, le nombre de séances sur 7 et 30 jours et le nombre de semaines d’affilée avec au moins une séance. Vos séances des 30 derniers jours apparaissent dans le fil d’activité de vos amis. Une séance en cours ou abandonnée n’est jamais montrée.</li>
+              <li><strong>Programmes</strong> : vos programmes personnels (nom, description, programme actif, jours, exercices, séries, répétitions, RIR, tempo, temps de repos et notes). Les programmes qu’un coach vous a assignés ne sont jamais montrés. Vos amis peuvent copier un programme partagé.</li>
+              <li><strong>Records</strong> : vos meilleures performances (charge, répétitions, force maximale estimée et date) sur vos dix exercices les plus pratiqués des 90 derniers jours, calculées à partir de vos séances terminées.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Les trois catégories sont éteintes au départ : vous pouvez tout partager d’un geste ou choisir. Chacune se modifie à tout moment, avec effet immédiat : une catégorie éteinte n’est plus visible de vos amis.</p>
+        <p>Vos amis peuvent encourager une séance partagée d’un « Bravo ». Ils voient le nombre de Bravos d’une séance ; vous seul voyez qui vous a encouragé. RepDay enregistre aussi vos liens d’amitié : demandes, acceptations, refus, annulations et retraits, avec leurs dates.</p>
+        <p>Un programme copié par un ami lui appartient : il n’est pas mis à jour avec le vôtre et reste dans son compte, avec les exercices personnalisés qu’il contient, même si vous cessez ensuite de partager vos programmes, retirez cet ami ou supprimez votre compte.</p>
+        <p>Ne sont jamais montrés à vos amis : votre email, votre âge, votre genre, votre poids, votre taille, vos niveaux, vos objectifs, votre nutrition, vos pas, votre abonnement, vos messages, vos liens avec un coach, les bilans générés par l’IA, les données de technique du Live Coach et vos vidéos.</p>
+        <p>Les notifications liées aux amis contiennent le prénom de l’ami et, pour une copie, le nom du programme ; jamais une charge ni un nom d’exercice.</p>
+        <p>Depuis le profil d’un ami, vous pouvez le signaler, le bloquer ou le retirer de vos amis. Un signalement enregistre le compte signalé, le motif, l’élément visé et votre éventuel commentaire ; il est examiné sous 24 heures et peut conduire à la suspension du compte en cause. Bloquer un ami rompt votre amitié : il ne voit plus rien de votre compte et ne peut plus vous envoyer de demande. Retirer un ami supprime les Bravos échangés entre vous, sans qu’il en soit averti par une notification. Quitter le volet Amis supprime votre code, vos choix de partage, vos liens d’amitié et les Bravos donnés et reçus ; vos blocages et vos signalements sont conservés.</p>
+
         <h3>Notifications</h3>
         <p>Pour les rappels, RepDay enregistre un jeton de notification et le type de plateforme. Le SDK Firebase Cloud Messaging collecte aussi automatiquement la version de l’application, son agent technique et un identifiant propre à l’installation (FID), qui n’identifie pas à lui seul une personne ou un appareil physique. Le jeton conservé par RepDay est supprimé avec le compte. <a href="https://firebase.google.com/docs/android/play-data-disclosure">Détails publiés par Firebase</a>.</p>
 
@@ -132,8 +153,9 @@
           <tr><td>Traiter vos données de santé et de forme physique, dont les pas si vous activez leur suivi, pour personnaliser entraînements et progression et afficher l’historique des pas</td><td><strong>Consentement explicite</strong> (art. 9.2.a), retirable à tout moment</td></tr>
           <tr><td>Générer des bilans et suggestions assistés par intelligence artificielle</td><td>Exécution du contrat, sur la base des données que vous avez consenti à traiter</td></tr>
           <tr><td>Gérer votre abonnement et vos droits d’accès</td><td>Exécution du contrat</td></tr>
+          <tr><td>Montrer à vos amis les catégories que vous choisissez de partager (volet Amis)</td><td><strong>Consentement explicite</strong>, donné catégorie par catégorie (art. 6.1.a et, pour les données qui renseignent sur votre santé, art. 9.2.a), retirable à tout moment avec effet immédiat</td></tr>
           <tr><td>Envoyer des notifications de rappel</td><td>Consentement (autorisation système, révocable dans les réglages)</td></tr>
-          <tr><td>Sécuriser le service, prévenir la fraude et les abus</td><td>Intérêt légitime</td></tr>
+          <tr><td>Sécuriser le service, prévenir la fraude et les abus, dont le harcèlement par des demandes d’ami répétées, et traiter les signalements</td><td>Intérêt légitime</td></tr>
           <tr><td>Conserver les pièces comptables liées aux abonnements</td><td>Obligation légale</td></tr>
         </table>
         <p>Retirer votre consentement au traitement des données de santé reste possible à tout moment. Ce retrait ne remet pas en cause les traitements déjà effectués, mais il rend l’essentiel du service inopérant : la personnalisation en dépend entièrement.</p>
@@ -150,10 +172,11 @@
           <tr><td>RevenueCat, si les achats sont activés</td><td>Gestion technique des abonnements</td><td>Identifiant de compte, statut d’abonnement</td></tr>
           <tr><td>Twilio SendGrid</td><td>Envoi des emails transactionnels</td><td>Adresse email, contenu du message</td></tr>
           <tr><td>Scaleway (France)</td><td>Hébergement de l’application et de la base de données</td><td>Ensemble des données du service</td></tr>
-          <tr><td>Scaleway Object Storage (France)</td><td>Stockage des fichiers échangés dans la messagerie</td><td>Pièces jointes des conversations</td></tr>
+          <tr><td>Scaleway Object Storage (France)</td><td>Stockage des fichiers échangés dans la messagerie et des photos de profil</td><td>Pièces jointes des conversations, photos de profil</td></tr>
           <tr><td>Sentry, si le diagnostic est activé</td><td>Détection des erreurs et pannes</td><td>Rapports techniques expurgés du contenu applicatif</td></tr>
         </table>
-        <p>Votre coach, si vous êtes relié à l’un d’eux, accède aux données d’entraînement et aux messages nécessaires à son suivi. Ce lien est créé par vous et vous pouvez y mettre fin.</p>
+        <p>Votre coach, si vous êtes relié à l’un d’eux, accède aux données d’entraînement et aux messages nécessaires à son suivi. Ce lien est créé par vous et vous pouvez y mettre fin. Votre photo de profil est visible de votre coach, et la sienne de vous, dès la demande de lien.</p>
+        <p>Vos amis, si vous activez le volet Amis, voient uniquement ce qui est décrit au paragraphe « Volet Amis », pour les catégories que vous partagez. Ce volet ne fait intervenir aucun prestataire supplémentaire.</p>
         <p>Aucun accès n’est accordé à des annonceurs, courtiers en données ou réseaux publicitaires.</p>
       </section>
 
@@ -167,7 +190,7 @@
         </p>
         <p>
           L’hébergement de la base de données principale est situé
-          <strong>en France</strong>, chez Scaleway, de même que le stockage des pièces jointes de la messagerie.
+          <strong>en France</strong>, chez Scaleway, de même que le stockage des pièces jointes de la messagerie et des photos de profil.
           Les requêtes d’IA utilisent les Generative APIs de Scaleway hébergées à Paris. Selon sa
           <a href="https://www.scaleway.com/en/docs/generative-apis/reference-content/data-privacy/">politique officielle</a>,
           Scaleway n’utilise pas les requêtes pour entraîner les modèles et ne conserve normalement pas le contenu des prompts ;
@@ -181,12 +204,17 @@
           <tr><th>Donnée</th><th>Durée</th></tr>
           <tr><td>Compte et données associées en base</td><td>Tant que le compte existe, puis suppression en base lors de la suppression du compte</td></tr>
           <tr><td>Compte inactif</td><td>Aucune suppression automatique : le compte et ses données sont conservés tant que vous ne les supprimez pas vous-même</td></tr>
+          <tr><td>Code ami et choix de partage</td><td>Jusqu’à votre sortie du volet Amis, une suspension de votre compte ou sa suppression</td></tr>
+          <tr><td>Liens d’amitié, y compris les demandes refusées, annulées ou terminées</td><td>Conservés pour empêcher qu’une demande soit renvoyée en boucle à la même personne. Supprimés quand l’un de vous deux quitte le volet Amis, bloque l’autre ou supprime son compte, ou en cas de suspension. Ils ne contiennent que les deux comptes concernés, l’état de la demande et des dates</td></tr>
+          <tr><td>Réactions « Bravo »</td><td>Jusqu’à la suppression de la séance ou la fin de l’amitié (retrait, blocage, sortie du volet Amis, suspension, suppression d’un des deux comptes). Un Bravo retiré n’est plus visible ni compté ; sa trace (qui, quelle séance, dates) est gardée jusqu’à ces événements pour qu’une remise ne renvoie pas de notification</td></tr>
+          <tr><td>Signalements (messagerie et volet Amis)</td><td>12 mois après leur traitement, puis supprimés ; plus tôt si le compte qui a signalé ou le compte signalé est supprimé</td></tr>
+          <tr><td>Blocages</td><td>Jusqu’au déblocage ou à la suppression d’un des deux comptes</td></tr>
           <tr><td>Jeton de suppression de compte</td><td>15 minutes, à usage unique, stocké uniquement sous forme de condensat</td></tr>
           <tr><td>Jeton de réinitialisation de mot de passe</td><td>Durée courte, à usage unique, stocké sous forme de condensat</td></tr>
           <tr><td>Journaux techniques et rapports d’erreur</td><td>Conservés par notre hébergeur selon la durée de rétention de son service de journalisation ; nous n’en gardons aucune copie séparée</td></tr>
           <tr><td>Pièces comptables liées aux abonnements</td><td>10 ans, conformément à l’obligation légale française</td></tr>
         </table>
-        <p>La suppression de votre compte efface en base votre profil, vos entraînements, vos données nutritionnelles, vos messages et les références à leurs pièces jointes. RepDay tente ensuite de supprimer les fichiers joints du stockage privé ; une erreur de stockage peut empêcher cette purge sans annuler la suppression du compte. Les pièces comptables et les traces de facturation détenues par Apple, Google ou notre prestataire de facturation obéissent à leurs propres obligations légales et ne sont pas effacées par cette action.</p>
+        <p>La suppression de votre compte efface en base votre profil, vos entraînements, vos données nutritionnelles, vos messages et les références à leurs pièces jointes et à votre photo de profil, ainsi que votre code ami, vos liens d’amitié et les Bravos donnés et reçus. RepDay tente ensuite de supprimer les fichiers joints et votre photo du stockage privé ; une erreur de stockage peut empêcher cette purge sans annuler la suppression du compte. Un programme qu’un ami a copié avant la suppression reste dans son compte (voir « Volet Amis »). Les pièces comptables et les traces de facturation détenues par Apple, Google ou notre prestataire de facturation obéissent à leurs propres obligations légales et ne sont pas effacées par cette action.</p>
       </section>
 
       <section>
@@ -196,6 +224,10 @@
           La façon la plus directe d’exercer votre droit à l’effacement est de supprimer votre compte, depuis
           l’application ou depuis <a href="./suppression-compte.html">la page de suppression</a> : l’effacement
           est immédiat et ne nécessite aucune démarche auprès de nous.
+        </p>
+        <p>
+          Dans le volet Amis, vous pouvez à tout moment, depuis l’application, éteindre un partage, retirer un ami,
+          renouveler votre code ou quitter le volet.
         </p>
         <p>
           Pour les autres droits, écrivez à
