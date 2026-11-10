@@ -27,13 +27,17 @@
       nav a { color: #225c42; }
       footer { margin: 30px 0 10px; font-size: .88rem; color: #4c6459; }
       :focus-visible { outline: 3px solid #b35d00; outline-offset: 3px; }
+      .box { margin: 14px 0; padding: 14px 16px; border: 2px solid #276447; border-radius: 12px; background: #f6faf5; }
+      .box p, .box li { font-size: .95rem; }
+      .note { font-size: .9rem; color: #3d5a4c; }
+      a { overflow-wrap: anywhere; }
     </style>
   </head>
   <body>
     <main>
       <p class="brand">REPDAY</p>
       <h1>Conditions générales d’utilisation et de vente</h1>
-      <p>Projet 1.5 du 10 novembre 2026. Validation commerciale en attente.</p>
+      <p>Version 1.6 du <time datetime="2026-11-10">10 novembre 2026</time>. Les conditions de vente figurent aux articles <a href="#cgv">5</a>, <a href="#paiement">6</a>, <a href="#retractation">7</a> et <a href="#garantie">15</a>.</p>
 
       <nav>
         <a href="./terms.html" lang="en">English version</a> ·
@@ -71,7 +75,7 @@
         <p>Le service évolue : des fonctionnalités peuvent être ajoutées, modifiées ou retirées. Un retrait affectant substantiellement un abonnement en cours ouvre droit à résiliation dans les conditions de l’article 6.</p>
       </section>
 
-      <section>
+      <section id="compte">
         <h2>4. Compte</h2>
         <ul>
           <li>RepDay est réservé aux personnes majeures : la création d’un compte exige d’avoir au moins 18 ans. Un compte ouvert par un mineur peut être supprimé dès que nous en avons connaissance.</li>
@@ -93,7 +97,7 @@
           <tr><td>Coach Premium mensuel</td><td>1 mois</td><td>29,99 €</td></tr>
           <tr><td>Coach Premium annuel</td><td>12 mois</td><td>249,99 €</td></tr>
         </table>
-        <p>Les prix sont indiqués toutes taxes comprises, dans la devise de votre compte de magasin d’applications. Ils peuvent varier selon le pays. Le prix applicable est celui affiché au moment de la souscription.</p>
+        <p>Les prix sont indiqués toutes taxes comprises, dans la devise de votre compte de magasin d’applications. Ils peuvent varier selon le pays. Le prix applicable est celui que le magasin affiche avant la confirmation de l’achat, avec la durée de l’abonnement.</p>
         <p>Aucune période d’essai gratuite n’est proposée : l’abonnement est facturé dès la souscription. La version gratuite permet de découvrir RepDay avant de s’abonner.</p>
         <h3>Ce que comprend chaque formule</h3>
         <p>Toutes les formules comprennent le suivi des séances, les programmes et les cycles, les exercices personnels, les statistiques, le suivi de la nutrition et des pas (avec votre accord pour les données de santé), le lien avec un coach, l’import des tableaux Excel et CSV reconnus, lus sans IA, et l’export de toutes vos données. Elles se distinguent ainsi :</p>
@@ -104,17 +108,37 @@
         </ul>
         <p>Les plafonds s’appliquent par compte et se renouvellent chaque jour. Toute réduction de ces plafonds ou de ce contenu est une modification substantielle au sens de l’article 12.</p>
         <p>Si votre abonnement prend fin, votre compte repasse en Free et vous gardez votre historique, dans les conditions de la politique de confidentialité. L’espace coach reste alors consultable, et les actions de coach sont verrouillées : aucun nouvel athlète, rapport ou programme partagé.</p>
+        <h3 id="compatibilite">Fonctionnement et compatibilité</h3>
+        <ul>
+          <li>RepDay est une application pour iPhone et pour Android. La version minimale du système requise est indiquée sur sa fiche dans l’App Store et dans Google Play.</li>
+          <li>Un compte RepDay et une connexion Internet sont nécessaires pour synchroniser vos données et utiliser les fonctions d’intelligence artificielle.</li>
+          <li>Le Live Coach utilise la caméra de l’appareil. L’application Apple Watch, la lecture des pas (Apple Santé ou Health Connect) et les notifications sont facultatives et demandent votre autorisation.</li>
+          <li>L’accès payant est attaché à votre compte RepDay : il est disponible sur les appareils connectés à ce compte. L’abonnement se gère dans le magasin où il a été souscrit.</li>
+        </ul>
       </section>
 
-      <section>
-        <h2>6. Paiement, renouvellement et résiliation</h2>
-        <p><strong>Le paiement est encaissé par Apple ou Google, jamais par nous.</strong> Nous n’avons accès à aucune coordonnée bancaire.</p>
+      <section id="paiement">
+        <h2>6. Achat, paiement, renouvellement et résiliation</h2>
+        <h3 id="vendeur">Qui vous vend l’abonnement</h3>
+        <p>Les abonnements payants s’achètent uniquement dans l’application, par l’achat intégré de votre magasin d’applications. <strong>RepDay ne vend aucun abonnement directement, n’encaisse aucun paiement et n’a accès à aucune coordonnée bancaire.</strong></p>
         <ul>
-          <li><strong>Renouvellement automatique.</strong> Votre abonnement se renouvelle automatiquement à l’échéance, pour la même durée et au tarif en vigueur, sauf résiliation avant la fin de la période en cours.</li>
-          <li><strong>Résilier le renouvellement.</strong> Gérez l’abonnement dans le magasin où vous l’avez souscrit. <a href="https://apps.apple.com/account/subscriptions">Abonnements Apple</a> · <a href="https://play.google.com/store/account/subscriptions">Abonnements Google Play</a>.</li>
-          <li>La résiliation prend effet à la fin de la période déjà payée. Vous conservez l’accès jusque-là.</li>
-          <li>Désinstaller l’application ou supprimer votre compte <strong>ne résilie pas</strong> l’abonnement. Résiliez-le d’abord depuis votre magasin d’applications.</li>
-          <li><strong>Remboursements.</strong> Consultez les procédures du magasin de votre achat. Vos droits légaux, dont la rétractation et la garantie de conformité lorsqu’elles s’appliquent, restent applicables. RepDay traite les réclamations qui relèvent de ses obligations.</li>
+          <li><strong>App Store.</strong> Selon les conditions d’Apple applicables en France, l’achat est conclu avec Apple Distribution International Ltd. (Hollyhill Industrial Estate, Hollyhill, Cork, Irlande), commerçant officiel, qui encaisse le paiement et vous adresse le reçu. RepDay, fournisseur de l’application, vous en concède la licence et fournit le service.</li>
+          <li><strong>Google Play.</strong> Selon les conditions de Google Play, l’achat est conclu avec Google Commerce Limited (70 Sir John Rogerson’s Quay, Dublin 2, Irlande), qui encaisse le paiement et vous adresse le reçu. RepDay fournit le service.</li>
+        </ul>
+        <p>Le paiement, la facturation et les remboursements suivent les conditions du magasin, sans préjudice de vos droits légaux. Les présentes conditions régissent le service fourni par RepDay.</p>
+
+        <h3>Renouvellement automatique</h3>
+        <p>L’abonnement est souscrit pour un mois ou pour un an. Il se renouvelle automatiquement pour la même durée, sauf annulation du renouvellement : <strong>sur l’App Store, au moins 24 heures avant la fin de la période en cours ; sur Google Play, avant la date de renouvellement</strong>. Toute hausse de prix vous est annoncée à l’avance par le magasin, selon ses règles. Vous pouvez la refuser en annulant le renouvellement.</p>
+
+        <h3 id="resiliation">Annuler le renouvellement (résiliation)</h3>
+        <ul>
+          <li>Vous pouvez annuler le renouvellement à tout moment, dans le magasin où vous avez souscrit : <a href="https://apps.apple.com/account/subscriptions">Abonnements Apple</a> · <a href="https://play.google.com/store/account/subscriptions">Abonnements Google Play</a>. Depuis RepDay : Profil, puis votre formule ou « Gérer mon abonnement », puis « Gérer / annuler dans le store ».</li>
+          <li>L’annulation prend effet à la fin de la période déjà payée. Vous conservez l’accès jusque-là, puis votre compte repasse en Free. Elle ne rembourse pas la période en cours, sauf rétractation (<a href="#retractation">article 7</a>) ou mise en œuvre de la garantie légale de conformité (<a href="#garantie">article 15</a>).</li>
+          <li>Désinstaller l’application ou supprimer votre compte <strong>ne résilie pas</strong> l’abonnement. Annulez-le d’abord dans votre magasin d’applications.</li>
+        </ul>
+
+        <h3>Changer de formule, restaurer ses achats</h3>
+        <ul>
           <li><strong>Changement de formule sur Android.</strong> Le passage de Premium à Coach Premium est immédiat, avec facturation de la différence au prorata jusqu’à l’échéance existante. Le passage de Coach Premium à Premium prend effet au prochain renouvellement. Le passage mensuel ↔ annuel au sein d’une même gamme est immédiat, sans prélèvement immédiat : le nouveau tarif est facturé à l’échéance existante. Le montant et les conditions sont indiqués par Google Play avant confirmation.</li>
           <li><strong>Changement de formule sur iOS.</strong> Apple applique ses règles de changement d’abonnement : le passage à Coach Premium est immédiat avec remboursement au prorata de l’ancienne formule ; le passage à Premium ou entre les durées mensuelle et annuelle d’une même gamme prend effet au prochain renouvellement. Vérifiez les conditions affichées par l’App Store.</li>
           <li><strong>Restauration et changement de compte.</strong> Utilisez de préférence le compte RepDay d’origine. Restaurer les achats du même compte Apple ou Google sur un autre compte RepDay transfère l’accès lié à ces achats au compte connecté ; l’ancien compte perd cet accès, sauf droits indépendants déjà accordés. Un achat peut également entraîner ce transfert lorsque le reçu appartient déjà à un autre compte RepDay. L’achat ne donne pas accès simultanément à plusieurs comptes RepDay.</li>
@@ -122,12 +146,29 @@
       </section>
 
       <section id="retractation">
-        <h2>7. Droit de rétractation</h2>
-        <p>Pour un contrat de service conclu à distance, le consommateur dispose en principe de 14 jours à compter de sa conclusion pour se rétracter sans motif. L’activation de l’accès payant ne vaut pas, à elle seule, perte de ce droit.</p>
-        <p>Si l’exécution commence avant la fin du délai à la demande expresse du consommateur, le montant éventuellement dû pour un service déjà fourni est soumis aux conditions de l’article L. 221-25. La perte du droit pour un service entièrement exécuté ou pour certains contenus numériques sans support matériel obéit aux conditions distinctes de l’article L. 221-28.</p>
-        <p>Pour une commande App Store, consultez l’historique d’achats du compte Apple et, si elle est proposée, choisissez l’option d’annulation de la transaction. Pour une commande Google Play, consultez les modalités pour l’EEE et le formulaire indiqué pour les services numériques. Conservez le reçu et l’accusé de réception de votre déclaration.</p>
-        <ul><li><a href="https://www.apple.com/legal/internet-services/itunes/fr/terms.html">Rétractation selon les conditions Apple</a></li><li><a href="https://support.google.com/googleplay/answer/15576634?hl=fr">Rétractation et remboursements Google Play dans l’EEE</a></li></ul>
-        <p>Pour une réclamation à RepDay ou une déclaration concernant un contrat conclu avec RepDay, écrivez à <a href="mailto:contact@repday.fr">contact@repday.fr</a> en indiquant votre nom, l’offre, la date et la référence de la commande. Vous pouvez écrire « Je vous notifie ma rétractation du contrat indiqué ci-dessus ». N’envoyez aucune donnée bancaire.</p>
+        <h2>7. Droit de rétractation et remboursements</h2>
+        <h3>Le principe</h3>
+        <p>Pour un contrat conclu à distance, le consommateur dispose en principe de quatorze jours pour se rétracter, sans avoir à motiver sa décision (article L. 221-18 du Code de la consommation). Pour un service, ce délai court à compter de la conclusion du contrat.</p>
+        <p><strong>RepDay ne vous demande pas de renoncer à ce droit, et l’activation de l’accès payant ne vaut pas renonciation.</strong> La loi prévoit deux situations particulières, chacune à des conditions précises : si l’exécution d’un service commence pendant le délai à votre demande expresse, une somme proportionnée au service déjà fourni peut être due en cas de rétractation (article L. 221-25) ; le droit ne peut plus être exercé pour un service pleinement exécuté, ou pour un contenu numérique sans support matériel, lorsque vous avez donné votre accord exprès et reconnu perdre ce droit (article L. 221-28). RepDay ne recueille pas un tel accord dans l’application. Le magasin indique lors de l’achat les conditions qu’il applique.</p>
+
+        <h3>Comment se rétracter</h3>
+        <p>Le paiement ayant été encaissé par le magasin (<a href="#vendeur">article 6</a>), la rétractation s’exerce auprès de lui, et c’est lui qui rembourse :</p>
+        <ul>
+          <li><strong>App Store.</strong> Selon les conditions d’Apple, vous pouvez annuler votre commande dans les quatorze jours qui suivent la réception du reçu ; pour un abonnement, Apple précise que ce droit s’exerce après la souscription initiale et non à chaque renouvellement automatique. Dans votre compte Apple, ouvrez l’historique des achats, choisissez la commande, puis « Annuler la transaction » (ou rendez-vous sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>). Apple indique envoyer un accusé de réception par e-mail mentionnant le contenu de la demande, sa date et son heure, et rembourser sur le moyen de paiement utilisé. Le formulaire type de rétractation figure dans les <a href="https://www.apple.com/legal/internet-services/itunes/fr/terms.html">conditions d’Apple</a>.</li>
+          <li><strong>Google Play.</strong> Google indique que l’achat d’un service numérique peut faire l’objet d’une rétractation dans les quatorze jours qui suivent l’achat, au moyen de son <a href="https://support.google.com/googleplay/contact/withdrawal_form">formulaire de rétractation</a> ou d’une <a href="https://support.google.com/googleplay/answer/15575720?hl=fr">demande de remboursement</a>. Il applique des règles différentes aux contenus numériques. Voir les <a href="https://support.google.com/googleplay/answer/15576634?hl=fr">conditions de remboursement de Google Play dans l’EEE</a>.</li>
+        </ul>
+        <p>Conservez votre reçu et l’accusé de réception de votre déclaration. Dans l’application, l’écran « Gérer mon abonnement » mène à la page du magasin concerné.</p>
+
+        <h3 id="reclamation">Écrire à RepDay</h3>
+        <p>Pour une réclamation, écrivez à <a href="mailto:contact@repday.fr">contact@repday.fr</a> en indiquant votre nom, l’adresse e-mail de votre compte RepDay, le magasin, la formule, la date de la commande et, si possible, sa référence figurant sur le reçu. N’envoyez aucune donnée bancaire ni mot de passe. RepDay ne peut pas annuler une transaction conclue dans un magasin d’applications : si vous nous adressez une déclaration de rétractation, nous vous répondons par écrit en vous indiquant la démarche. Pour respecter le délai, adressez-la aussi directement au magasin.</p>
+
+        <h3 id="demarches">Quatre démarches à ne pas confondre</h3>
+        <ul>
+          <li><strong>Annuler le renouvellement</strong> : l’abonnement s’arrête à la fin de la période payée, sans remboursement de cette période. Dans le magasin (<a href="#resiliation">article 6</a>).</li>
+          <li><strong>Se rétracter</strong> : le contrat initial prend fin dans le délai de quatorze jours et le magasin vous rembourse, dans les conditions ci-dessus.</li>
+          <li><strong>Demander un remboursement</strong> pour une autre raison : selon les règles du magasin, ou au titre de la garantie légale de conformité (<a href="#garantie">article 15</a>).</li>
+          <li><strong>Supprimer votre compte RepDay</strong> : vos données sont effacées (<a href="#compte">article 4</a> et <a href="./confidentialite.html">politique de confidentialité</a>), mais ni l’abonnement ni son renouvellement ne sont annulés. Annulez-le d’abord dans le magasin.</li>
+        </ul>
       </section>
 
       <section>
@@ -169,7 +210,7 @@
 
       <section>
         <h2>10. Disponibilité et responsabilité</h2>
-        <p>Nous mettons en œuvre les moyens raisonnables pour assurer la disponibilité du service, sans garantie d’absence d’interruption. Des interruptions peuvent survenir pour maintenance, mise à jour ou cause technique extérieure.</p>
+        <p>Nous mettons en œuvre les moyens raisonnables pour assurer la disponibilité du service, sans garantie d’absence d’interruption. Des interruptions peuvent survenir pour maintenance, mise à jour ou cause technique extérieure. Cette clause ne limite pas la garantie légale de conformité décrite à l’<a href="#garantie">article 15</a>.</p>
         <p>Les analyses et suggestions peuvent être inexactes. L’utilisateur adapte sa pratique à sa situation et tient compte des avertissements de sécurité. Chacune des parties répond des dommages qui lui sont imputables dans les conditions prévues par la loi.</p>
         <p>Aucune disposition des présentes ne limite votre responsabilité ou la nôtre au-delà de ce que la loi permet, notamment en cas de dommage corporel ou de faute lourde.</p>
       </section>
@@ -222,7 +263,38 @@
         <p>La médiation est facultative : elle ne prive pas le consommateur de la possibilité de saisir le juge, et chaque partie peut se retirer du processus à tout moment. Elle n’aboutit pas nécessairement à une solution : chaque partie reste libre d’accepter ou de refuser la solution proposée par le médiateur.</p>
       </section>
 
-      <section id="garantie"><h2>15. Garantie légale de conformité</h2><p>Pour un service numérique fourni en continu, le consommateur bénéficie de la garantie légale de conformité pendant la période de fourniture prévue. Adressez votre demande de mise en conformité, sans frais, à <a href="mailto:contact@repday.fr">contact@repday.fr</a> pour le service fourni par RepDay. Dans les cas prévus par la loi, une réduction du prix ou la résolution du contrat peut être demandée.</p><p class="todo">[INSÉRER L’ENCADRÉ RÉGLEMENTAIRE DE L’ARTICLE D. 211-3 ADAPTÉ À LA FOURNITURE CONTINUE APRÈS VALIDATION]</p></section>
+      <section id="garantie">
+        <h2>15. Garantie légale de conformité</h2>
+        <p>RepDay fournit son service de manière continue pendant la durée de l’abonnement. Le consommateur bénéficie de la garantie légale de conformité des contenus numériques et des services numériques prévue aux articles L. 224-25-1 à L. 224-25-31 du Code de la consommation : pour une fourniture continue, elle couvre les défauts de conformité qui apparaissent pendant la période de fourniture prévue au contrat (article L. 224-25-12).</p>
+
+        <h3>Comment la mettre en œuvre</h3>
+        <ul>
+          <li>Signalez le défaut à <a href="mailto:contact@repday.fr">contact@repday.fr</a>, avec l’adresse e-mail de votre compte, votre appareil, la version de l’application et une description du problème. La mise en conformité est gratuite.</li>
+          <li>La mise en conformité peut prendre la forme d’une correction, d’une mise à jour de l’application ou du service, ou du rétablissement de l’accès.</li>
+          <li>Lorsque vous avez droit à une réduction du prix ou à la résolution du contrat, le remboursement passe par le magasin qui a encaissé le paiement. Pour un achat Google Play, RepDay peut effectuer le remboursement depuis Google Play. Pour un achat App Store, RepDay ne peut pas rembourser lui-même une transaction : la demande se fait auprès d’Apple (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>), et RepDay vous indique la démarche et recherche avec vous une solution conforme à vos droits.</li>
+          <li>La formule Free est fournie sans paiement et sans durée déterminée. Lorsque la garantie s’y applique, elle couvre les défauts apparus tant que votre compte est ouvert ; aucun prix n’ayant été payé, elle ne donne lieu à aucun remboursement.</li>
+        </ul>
+
+        <p class="note">Encadré établi conformément au modèle annexé à l’article D. 211-4 du Code de la consommation (contrats de fourniture continue).</p>
+        <div class="box" role="note" aria-label="Garanties légales">
+          <p>Le consommateur a droit à la mise en œuvre de la garantie légale de conformité en cas d’apparition d’un défaut de conformité durant un délai d’un mois pour l’abonnement mensuel ou d’un an pour l’abonnement annuel, pour chaque période d’abonnement, à compter de la fourniture du contenu numérique ou du service numérique. Durant ce délai, le consommateur n’est tenu d’établir que l’existence du défaut de conformité et non la date d’apparition de celui-ci.</p>
+          <p>La garantie légale de conformité emporte obligation de fournir toutes les mises à jour nécessaires au maintien de la conformité du contenu numérique ou du service numérique durant chaque période d’abonnement d’un mois pour l’abonnement mensuel ou d’un an pour l’abonnement annuel.</p>
+          <p>La garantie légale de conformité donne au consommateur droit à la mise en conformité du contenu numérique ou du service numérique sans retard injustifié suivant sa demande, sans frais et sans inconvénient majeur pour lui.</p>
+          <p>Le consommateur peut obtenir une réduction du prix en conservant le contenu numérique ou le service numérique, ou il peut mettre fin au contrat en se faisant rembourser intégralement contre renoncement au contenu numérique ou au service numérique, si :</p>
+          <p>1° Le professionnel refuse de mettre le contenu numérique ou le service numérique en conformité ;</p>
+          <p>2° La mise en conformité du contenu numérique ou du service numérique est retardée de manière injustifiée ;</p>
+          <p>3° La mise en conformité du contenu numérique ou du service numérique ne peut intervenir sans frais imposés au consommateur ;</p>
+          <p>4° La mise en conformité du contenu numérique ou du service numérique occasionne un inconvénient majeur pour le consommateur ;</p>
+          <p>5° La non-conformité du contenu numérique ou du service numérique persiste en dépit de la tentative de mise en conformité du professionnel restée infructueuse.</p>
+          <p>Le consommateur a également droit à une réduction du prix ou à la résolution du contrat lorsque le défaut de conformité est si grave qu’il justifie que la réduction du prix ou la résolution du contrat soit immédiate. Le consommateur n’est alors pas tenu de demander la mise en conformité du contenu numérique ou du service numérique au préalable.</p>
+          <p>Dans les cas où le défaut de conformité est mineur, le consommateur n’a droit à l’annulation du contrat que si le contrat ne prévoit pas le paiement d’un prix.</p>
+          <p>Toute période d’indisponibilité du contenu numérique ou du service numérique en vue de sa remise en conformité suspend la garantie qui restait à courir jusqu’à la fourniture du contenu numérique ou du service numérique de nouveau conforme.</p>
+          <p>Ces droits résultent de l’application des articles L. 224-25-1 à L. 224-25-31 du code de la consommation.</p>
+          <p>Le professionnel qui fait obstacle de mauvaise foi à la mise en œuvre de la garantie légale de conformité encourt une amende civile d’un montant maximal de 300 000 euros, qui peut être porté jusqu’à 10 % du chiffre d’affaires moyen annuel (article L. 242-18-1 du code de la consommation).</p>
+          <p>Le consommateur bénéficie également de la garantie légale des vices cachés en application des articles 1641 à 1649 du code civil, pendant une durée de deux ans à compter de la découverte du défaut. Cette garantie donne droit à une réduction de prix si le contenu numérique ou le service numérique est conservé, ou à un remboursement intégral contre renonciation au contenu numérique ou au service numérique.</p>
+        </div>
+        <p>Ces garanties s’ajoutent aux droits que vous tenez des conditions du magasin d’applications et ne sont limitées par aucune autre clause des présentes conditions. En cas de désaccord, vous pouvez recourir à la <a href="#mediation">médiation de la consommation</a> (article 14).</p>
+      </section>
 
       <footer><nav aria-label="Informations légales"><a href="./mentions-legales.html">Mentions légales</a> · <a href="./cgu.html">CGU</a> · <a href="./cgv.html">CGV</a> · <a href="./confidentialite.html">Confidentialité</a> · <a href="./suppression-compte.html">Supprimer mon compte</a></nav>
         <p>RepDay — <a href="./confidentialite.html">Politique de confidentialité</a> · <a href="./suppression-compte.html">Supprimer mon compte</a></p>

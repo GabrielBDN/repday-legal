@@ -27,13 +27,17 @@
       nav a { color: #225c42; }
       footer { margin: 30px 0 10px; font-size: .88rem; color: #4c6459; }
       :focus-visible { outline: 3px solid #b35d00; outline-offset: 3px; }
+      .box { margin: 14px 0; padding: 14px 16px; border: 2px solid #276447; border-radius: 12px; background: #f6faf5; }
+      .box p, .box li { font-size: .95rem; }
+      .note { font-size: .9rem; color: #3d5a4c; }
+      a { overflow-wrap: anywhere; }
     </style>
   </head>
   <body>
     <main>
       <p class="brand">REPDAY</p>
       <h1>Terms of use and sale</h1>
-      <p>Draft 1.5 dated 10 November 2026. Commercial review pending.</p>
+      <p>Version 1.6 dated <time datetime="2026-11-10">10 November 2026</time>. The terms of sale are in articles <a href="#cgv">5</a>, <a href="#paiement">6</a>, <a href="#retractation">7</a> and <a href="#garantie">15</a>.</p>
 
       <nav>
         <a href="./cgu.html">Version française</a> ·
@@ -71,7 +75,7 @@
         <p>The service evolves: features may be added, changed or removed. A removal substantially affecting a current subscription gives the right to terminate under the conditions of article 6.</p>
       </section>
 
-      <section>
+      <section id="compte">
         <h2>4. Account</h2>
         <ul>
           <li>RepDay is reserved for adults: creating an account requires being at least 18. An account opened by a minor may be deleted as soon as we become aware of it.</li>
@@ -93,7 +97,7 @@
           <tr><td>Coach Premium monthly</td><td>1 month</td><td>€29.99</td></tr>
           <tr><td>Coach Premium annual</td><td>12 months</td><td>€249.99</td></tr>
         </table>
-        <p>Prices include all taxes, in the currency of your app store account. They may vary by country. The applicable price is the one shown at the time of purchase.</p>
+        <p>Prices include all taxes, in the currency of your app store account. They may vary by country. The applicable price is the one the store shows before you confirm the purchase, with the subscription duration.</p>
         <p>No free trial is offered: the subscription is charged on purchase. The free version lets you discover RepDay before subscribing.</p>
         <h3>What each plan includes</h3>
         <p>Every plan includes workout tracking, programs and cycles, custom exercises, statistics, nutrition and step tracking (with your consent for health data), linking to a coach, importing recognized Excel and CSV tables, read without AI, and exporting all your data. They differ as follows:</p>
@@ -104,17 +108,37 @@
         </ul>
         <p>Limits apply per account and renew every day. Any reduction of these limits or of this content is a substantial change within the meaning of article 12.</p>
         <p>If your subscription ends, your account returns to Free and you keep your history, under the conditions of the privacy policy. The coach workspace then stays viewable and coach actions are locked: no new athlete, report or shared program.</p>
+        <h3 id="compatibilite">How it works and compatibility</h3>
+        <ul>
+          <li>RepDay is an app for iPhone and Android. The minimum operating system version is shown on its App Store and Google Play pages.</li>
+          <li>A RepDay account and an internet connection are needed to sync your data and use the artificial intelligence features.</li>
+          <li>Live Coach uses the device camera. The Apple Watch app, step reading (Apple Health or Health Connect) and notifications are optional and ask for your permission.</li>
+          <li>Paid access is attached to your RepDay account: it is available on the devices signed in to that account. The subscription is managed in the store where it was purchased.</li>
+        </ul>
       </section>
 
-      <section>
-        <h2>6. Payment, renewal and termination</h2>
-        <p><strong>Payment is collected by Apple or Google, never by us.</strong> We have no access to any bank details.</p>
+      <section id="paiement">
+        <h2>6. Purchase, payment, renewal and termination</h2>
+        <h3 id="vendeur">Who sells you the subscription</h3>
+        <p>Paid subscriptions can only be bought in the app, through your app store's in-app purchase. <strong>RepDay does not sell any subscription directly, collects no payment and has no access to any bank details.</strong></p>
         <ul>
-          <li><strong>Automatic renewal.</strong> Your subscription renews automatically at the end of the term, for the same duration and at the current price, unless terminated before the end of the current period.</li>
-          <li><strong>Cancel renewal.</strong> Manage the subscription in the store where you purchased it. <a href="https://apps.apple.com/account/subscriptions">Apple subscriptions</a> · <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a>.</li>
-          <li>Termination takes effect at the end of the period already paid. You keep access until then.</li>
-          <li>Uninstalling the app or deleting your account <strong>does not cancel</strong> the subscription. Cancel it first from your app store.</li>
-          <li><strong>Refunds.</strong> Check the process of the store where you purchased. Your statutory rights, including withdrawal and legal conformity guarantees where applicable, continue to apply. RepDay handles complaints within its responsibilities.</li>
+          <li><strong>App Store.</strong> Under Apple's terms applicable in France, the purchase is concluded with Apple Distribution International Ltd. (Hollyhill Industrial Estate, Hollyhill, Cork, Ireland), merchant of record, which collects the payment and sends you the receipt. RepDay, the app provider, licenses the app to you and provides the service.</li>
+          <li><strong>Google Play.</strong> Under the Google Play terms, the purchase is concluded with Google Commerce Limited (70 Sir John Rogerson's Quay, Dublin 2, Ireland), which collects the payment and sends you the receipt. RepDay provides the service.</li>
+        </ul>
+        <p>Payment, billing and refunds follow the store's terms, without prejudice to your statutory rights. These terms govern the service provided by RepDay.</p>
+
+        <h3>Automatic renewal</h3>
+        <p>The subscription is taken for one month or one year. It renews automatically for the same duration unless renewal is cancelled: <strong>on the App Store, at least 24 hours before the end of the current period; on Google Play, before the renewal date</strong>. Any price increase is announced to you in advance by the store, under its rules. You can refuse it by cancelling the renewal.</p>
+
+        <h3 id="resiliation">Cancelling renewal (termination)</h3>
+        <ul>
+          <li>You can cancel renewal at any time, in the store where you subscribed: <a href="https://apps.apple.com/account/subscriptions">Apple subscriptions</a> · <a href="https://play.google.com/store/account/subscriptions">Google Play subscriptions</a>. From RepDay: Profile, then your plan or “Manage my subscription”, then “Manage / cancel in the store”.</li>
+          <li>Cancellation takes effect at the end of the period already paid. You keep access until then, then your account returns to Free. It does not refund the current period, except in the event of withdrawal (<a href="#retractation">article 7</a>) or under the legal conformity guarantee (<a href="#garantie">article 15</a>).</li>
+          <li>Uninstalling the app or deleting your account <strong>does not cancel</strong> the subscription. Cancel it first in your app store.</li>
+        </ul>
+
+        <h3>Changing plans, restoring purchases</h3>
+        <ul>
           <li><strong>Changing plans on Android.</strong> Upgrading from Premium to Coach Premium takes effect immediately, with the price difference charged proportionally until the existing billing date. Downgrading from Coach Premium to Premium takes effect at the next renewal. Switching between monthly and annual billing within the same tier takes effect immediately without an immediate charge: the new price is charged on the existing billing date. Google Play displays the amount and terms before confirmation.</li>
           <li><strong>Changing plans on iOS.</strong> Apple applies its subscription change rules: upgrading to Coach Premium takes effect immediately with a proportional refund of the previous plan; downgrading to Premium or switching between monthly and annual billing within the same tier takes effect at the next renewal. Check the terms displayed by the App Store.</li>
           <li><strong>Restoring purchases and switching accounts.</strong> Prefer using your original RepDay account. Restoring purchases from the same Apple or Google account to another RepDay account transfers access from those purchases to the signed-in account; the previous account loses that access, except for independent access rights already granted. A purchase may also trigger this transfer when its receipt already belongs to another RepDay account. A purchase does not grant access to multiple RepDay accounts simultaneously.</li>
@@ -122,12 +146,29 @@
       </section>
 
       <section id="retractation">
-        <h2>7. Right of withdrawal</h2>
-        <p>For a distance service contract, consumers generally have 14 days from conclusion of the contract to withdraw without giving a reason. Starting paid access does not itself extinguish this right.</p>
-        <p>If performance starts within that period at your express request, any amount due for services already provided is subject to Article L. 221-25 of the French Consumer Code. Fully performed services and certain digital content supplied without a physical medium are subject to separate conditions under Article L. 221-28.</p>
-        <p>For an App Store order, check your Apple Account purchase history and choose the transaction cancellation option if shown. For a Google Play order, check the EEA policy and the form listed for digital services. Keep your receipt and the acknowledgment of your request.</p>
-        <ul><li><a href="https://www.apple.com/legal/internet-services/itunes/fr/terms.html">Withdrawal under Apple’s terms for France</a></li><li><a href="https://support.google.com/googleplay/answer/15576634?hl=en">Google Play withdrawal and refund policy for the EEA</a></li></ul>
-        <p>For a complaint to RepDay or a withdrawal notice for a contract concluded with RepDay, email <a href="mailto:contact@repday.fr">contact@repday.fr</a> with your name, plan, order date and reference. You may write “I hereby give notice that I withdraw from the contract identified above.” Do not send payment card details.</p>
+        <h2>7. Right of withdrawal and refunds</h2>
+        <h3>The principle</h3>
+        <p>For a distance contract, consumers generally have fourteen days to withdraw without giving a reason (Article L. 221-18 of the French Consumer Code). For a service, this period starts on the day the contract is concluded.</p>
+        <p><strong>RepDay does not ask you to waive this right, and starting paid access is not a waiver.</strong> The law provides for two specific situations, each subject to precise conditions: if a service starts within the period at your express request, an amount proportionate to the service already provided may be due if you withdraw (Article L. 221-25); the right can no longer be exercised for a fully performed service, or for digital content not supplied on a tangible medium, when you gave your express consent and acknowledged losing this right (Article L. 221-28). RepDay does not collect such consent in the app. The store shows at purchase the conditions it applies.</p>
+
+        <h3>How to withdraw</h3>
+        <p>As the payment was collected by the store (<a href="#vendeur">article 6</a>), you withdraw with the store, and the store issues the refund:</p>
+        <ul>
+          <li><strong>App Store.</strong> Under Apple's terms, you can cancel your order within fourteen days of receiving the receipt; for a subscription, Apple states that this right applies following the initial subscription and not upon each automatic renewal. In your Apple Account, open the purchase history, choose the order, then “Cancel transaction” (or go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>). Apple states that it sends an email acknowledgment showing the content of the request and its date and time, and refunds to the payment method used. The model withdrawal form is in <a href="https://www.apple.com/legal/internet-services/itunes/fr/terms.html">Apple's terms</a>.</li>
+          <li><strong>Google Play.</strong> Google states that you can withdraw from the purchase of a digital service within fourteen days of purchase, using its <a href="https://support.google.com/googleplay/contact/withdrawal_form">withdrawal form</a> or a <a href="https://support.google.com/googleplay/answer/15575720?hl=en">refund request</a>. It applies different rules to digital content. See the <a href="https://support.google.com/googleplay/answer/15576634?hl=en">Google Play refund policy for the EEA</a>.</li>
+        </ul>
+        <p>Keep your receipt and the acknowledgment of your notice. In the app, the “Manage my subscription” screen leads to the relevant store page.</p>
+
+        <h3 id="reclamation">Writing to RepDay</h3>
+        <p>For a complaint, email <a href="mailto:contact@repday.fr">contact@repday.fr</a> with your name, the email address of your RepDay account, the store, the plan, the order date and, if possible, the order reference shown on the receipt. Do not send payment details or passwords. RepDay cannot cancel a transaction made in an app store: if you send us a withdrawal notice, we reply in writing with the steps to follow. To meet the deadline, also send it directly to the store.</p>
+
+        <h3 id="demarches">Four separate steps</h3>
+        <ul>
+          <li><strong>Cancelling renewal</strong>: the subscription stops at the end of the paid period, without a refund of that period. In the store (<a href="#resiliation">article 6</a>).</li>
+          <li><strong>Withdrawing</strong>: the initial contract ends within the fourteen-day period and the store refunds you, under the conditions above.</li>
+          <li><strong>Requesting a refund</strong> for another reason: under the store's rules, or under the legal conformity guarantee (<a href="#garantie">article 15</a>).</li>
+          <li><strong>Deleting your RepDay account</strong>: your data is erased (<a href="#compte">article 4</a> and <a href="./privacy.html">privacy policy</a>), but neither the subscription nor its renewal is cancelled. Cancel it first in the store.</li>
+        </ul>
       </section>
 
       <section>
@@ -157,7 +198,7 @@
           <li><strong>Reporting.</strong> Any message, post, comment, user or friend profile can be reported from the app. Content you report disappears immediately from your screen; content reported by several people may be hidden pending review. Reports are submitted for review.</li>
           <li><strong>Blocking.</strong> You can end the link with a coach at any time, which ends the conversation and their access to your data. You can also block a friend from their profile or your conversation, or the person who wrote a comment: your friendship ends, they no longer see anything of your account, neither your posts nor your comments, and can no longer send you a request or message.</li>
           <li><strong>Removal.</strong> You can remove a friend or leave Friends at any time.</li>
-          <li><strong>Sanctions.</strong> Content contrary to these rules may be removed and the account concerned suspended or terminated, without refund in the event of a serious breach.</li>
+          <li><strong>Sanctions.</strong> Content contrary to these rules may be removed and the account concerned suspended or terminated, with due regard for consumers' statutory rights.</li>
         </ul>
         <p>You keep ownership of your content. You only grant us the technical right to host it and deliver it to its recipients, including the friends you choose to share it with, for the time needed for the service.</p>
       </section>
@@ -169,7 +210,7 @@
 
       <section>
         <h2>10. Availability and liability</h2>
-        <p>We use reasonable means to keep the service available, without guaranteeing that it is uninterrupted. Interruptions may occur for maintenance, updates or external technical causes.</p>
+        <p>We use reasonable means to keep the service available, without guaranteeing that it is uninterrupted. Interruptions may occur for maintenance, updates or external technical causes. This clause does not limit the legal conformity guarantee described in <a href="#garantie">article 15</a>.</p>
         <p>Analyses and suggestions can be inaccurate. Users should adapt their training to their circumstances and follow safety warnings. Each party is responsible for damage attributable to it under applicable law.</p>
         <p>Nothing in these terms limits your liability or ours beyond what the law allows, in particular in the event of bodily injury or gross negligence.</p>
       </section>
@@ -222,7 +263,38 @@
         <p>Mediation is optional: it does not prevent the consumer from going to court, and either party can withdraw from the process at any time. It does not necessarily lead to a solution: each party remains free to accept or refuse the solution proposed by the mediator.</p>
       </section>
 
-      <section id="garantie"><h2>15. Legal conformity guarantee</h2><p>For a continuously supplied digital service, consumers benefit from the legal conformity guarantee for the agreed supply period. Contact <a href="mailto:contact@repday.fr">contact@repday.fr</a> to request that RepDay’s service be brought into conformity free of charge. A price reduction or termination may be available under the conditions set by law.</p><p class="todo">[INSERT THE REQUIRED CONTINUOUS SUPPLY NOTICE UNDER ARTICLE D. 211-3 AFTER REVIEW]</p></section>
+      <section id="garantie">
+        <h2>15. Legal conformity guarantee</h2>
+        <p>RepDay supplies its service continuously for the duration of the subscription. Consumers benefit from the legal conformity guarantee for digital content and digital services set out in Articles L. 224-25-1 to L. 224-25-31 of the French Consumer Code: for continuous supply, it covers lack of conformity that becomes apparent during the supply period provided for in the contract (Article L. 224-25-12).</p>
+
+        <h3>How to use it</h3>
+        <ul>
+          <li>Report the defect to <a href="mailto:contact@repday.fr">contact@repday.fr</a>, with the email address of your account, your device, the app version and a description of the problem. Bringing the service into conformity is free of charge.</li>
+          <li>Bringing the service into conformity may take the form of a fix, an update of the app or the service, or restored access.</li>
+          <li>Where you are entitled to a price reduction or to terminate the contract, the refund goes through the store that collected the payment. For a Google Play purchase, RepDay can issue the refund from Google Play. For an App Store purchase, RepDay cannot refund a transaction itself: the request is made to Apple (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>), and RepDay tells you the steps and works with you on a solution consistent with your rights.</li>
+          <li>The Free plan is supplied without payment and for no fixed term. Where the guarantee applies to it, it covers defects that appear while your account is open; as no price was paid, it gives rise to no refund.</li>
+        </ul>
+
+        <p class="note">Translation of the notice drawn up under the model annexed to Article D. 211-4 of the French Consumer Code (continuous supply contracts). The French text, in the <a href="./cgu.html#garantie" lang="fr">French version of these terms</a>, is the regulatory wording.</p>
+        <div class="box" role="note" aria-label="Legal guarantees">
+          <p>The consumer is entitled to the legal conformity guarantee if a lack of conformity appears within one month for the monthly subscription or one year for the annual subscription, for each subscription period, from the supply of the digital content or digital service. During this period, the consumer only has to establish the existence of the lack of conformity, not when it appeared.</p>
+          <p>The legal conformity guarantee entails the obligation to supply all updates necessary to keep the digital content or digital service in conformity during each subscription period of one month for the monthly subscription or one year for the annual subscription.</p>
+          <p>The legal conformity guarantee entitles the consumer to have the digital content or digital service brought into conformity without undue delay following their request, free of charge and without significant inconvenience to them.</p>
+          <p>The consumer may obtain a price reduction while keeping the digital content or digital service, or may terminate the contract and obtain a full refund in exchange for giving up the digital content or digital service, if:</p>
+          <p>1° The trader refuses to bring the digital content or digital service into conformity;</p>
+          <p>2° Bringing the digital content or digital service into conformity is unjustifiably delayed;</p>
+          <p>3° The digital content or digital service cannot be brought into conformity without costs being imposed on the consumer;</p>
+          <p>4° Bringing the digital content or digital service into conformity causes significant inconvenience to the consumer;</p>
+          <p>5° The lack of conformity of the digital content or digital service persists despite the trader's unsuccessful attempt to bring it into conformity.</p>
+          <p>The consumer is also entitled to a price reduction or to terminate the contract where the lack of conformity is so serious that it justifies an immediate price reduction or termination. The consumer is then not required to request that the digital content or digital service be brought into conformity first.</p>
+          <p>Where the lack of conformity is minor, the consumer is only entitled to cancel the contract if the contract does not provide for payment of a price.</p>
+          <p>Any period during which the digital content or digital service is unavailable while being brought back into conformity suspends the remaining guarantee period until the digital content or digital service is supplied in conformity again.</p>
+          <p>These rights result from Articles L. 224-25-1 to L. 224-25-31 of the French Consumer Code.</p>
+          <p>A trader who obstructs in bad faith the implementation of the legal conformity guarantee is liable to a civil fine of up to €300,000, which may be increased to 10% of average annual turnover (Article L. 242-18-1 of the French Consumer Code).</p>
+          <p>The consumer also benefits from the legal guarantee against hidden defects under Articles 1641 to 1649 of the French Civil Code, for two years from the discovery of the defect. This guarantee entitles the consumer to a price reduction if the digital content or digital service is kept, or to a full refund in exchange for giving up the digital content or digital service.</p>
+        </div>
+        <p>These guarantees are in addition to the rights you have under the app store's terms and are not limited by any other clause of these terms. In the event of disagreement, you can use <a href="#mediation">consumer mediation</a> (article 14).</p>
+      </section>
 
       <footer><nav aria-label="Legal information"><a href="./mentions-legales.html">Legal notice (French)</a> · <a href="./terms.html">Terms</a> · <a href="./terms.html#cgv">Terms of sale</a> · <a href="./privacy.html">Privacy</a> · <a href="./suppression-compte.html">Delete my account (French)</a></nav>
         <p>RepDay — <a href="./privacy.html">Privacy policy</a> · <a href="./suppression-compte.html">Delete my account</a></p>

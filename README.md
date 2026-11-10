@@ -51,7 +51,7 @@ Les CGU françaises et anglaises locales sont en version 1.3 : elles décrivent
 les changements de formule et le transfert d'achat entre comptes RepDay,
 validés par Gabriel. Ces modifications n'ont pas été publiées.
 
-Avant publication commerciale : vérifier le parcours de rétractation. Le
+Le parcours de rétractation est décrit depuis le 10 novembre 2026 (voir plus bas). Le
 téléphone figure dans les mentions légales depuis le 10 novembre 2026. L'entreprise est immatriculée, avec un
 début d'activité prévu le **1er décembre 2026**, reconfirmé par Gabriel.
 Le suivi technique et les étapes consoles se trouvent dans le dépôt RepDay :
@@ -93,4 +93,12 @@ Relier les cinq routes au pied de page du site. Vérifier les liens .html et les
 
 Garder toutes les URL GitHub Pages en service pendant la transition. Pour la suppression, conserver le fragment #token lors de tout renvoi, ne jamais le mettre en query et tester aussi un lien émis avant la bascule. Laisser l’ancienne page active tant que les magasins et le flux e-mail n’ont pas été validés avec la nouvelle origine.
 
-Les mentions légales sont complétées depuis le 10 novembre 2026 (éditeur, immatriculation, hébergeurs, médiation). Avant publication, insérer et valider l’encadré réglementaire de garantie adapté à la fourniture continue, vérifier les prix TTC et les offres des stores, la rétractation par magasin, la qualification du contrat et les mécanismes de transfert des données. Coordonner les textes de suppression avec la migration de la file de reprise des médias. La page de rétractation des CGV informe et oriente vers les magasins. L’obligation de fonctionnalité et d’accusé sur support durable reste à valider par contrat et par canal.
+Les mentions légales sont complétées depuis le 10 novembre 2026 (éditeur, immatriculation, hébergeurs, médiation). Coordonner les textes de suppression avec la migration de la file de reprise des médias.
+
+## Conditions de vente — 10 novembre 2026 (version 1.6)
+
+- Garantie légale : encadré de l’annexe à l’article **D. 211-4** (fourniture continue, 3e alinéa de L. 224-25-12), et non D. 211-3 (fourniture ponctuelle). Texte repris mot pour mot, seules les mentions « X » remplacées par les périodes d’abonnement (un mois, un an). Article 15 de `cgu.html` et `terms.html` (`#garantie`) ; la version anglaise est une traduction et renvoie au texte français.
+- Vendeur : Apple Distribution International Ltd. (commerçant officiel, conditions Apple pour la France) et Google Commerce Limited (conditions Google Play). RepDay n’encaisse rien. Article 6 (`#vendeur`, `#resiliation`).
+- Rétractation et remboursements : démarches propres à chaque magasin, aucune renonciation demandée par RepDay. Article 7 (`#retractation`, `#reclamation`, `#demarches`).
+- La version des conditions (1.6) doit être celle de `LEGAL_TERMS_VERSION` côté serveur au déploiement.
+- Questions encore ouvertes (qui porte la fonctionnalité de L. 221-21, l’information de L. 215-1 avant la reconduction annuelle, la confirmation de L. 221-13) : `FINALISATION_CGV_REPDAY_2026.md` dans le dépôt RepDay. Les pages ne présentent aucune de ces questions comme tranchée.
